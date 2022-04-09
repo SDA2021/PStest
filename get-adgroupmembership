@@ -1,0 +1,1 @@
+Get-ADGroupMember -Identity "Enterprise Admins" -Recursive | select name, SameAccountname | -export-csv %temp%\Admins.csv -Encoding UTF8              
